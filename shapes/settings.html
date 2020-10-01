@@ -1,0 +1,94 @@
+<style>
+	
+	#shapeControls {
+		margin-top:20px;
+	}
+	
+	input {
+		background-color:#191919;
+		border-width:1px;
+		border-radius:5%;
+		margin-top:20px;
+	}
+	
+	#shapeInput {
+		width:150px;
+		height:40px;
+	}
+
+	#thing {
+		margin-top: 20px;
+	}
+	input::placeholder {
+		font-size: 20px;
+		color:white;
+	}
+	
+	#generateShape {
+		border-radius: 30%;
+	}
+	
+	#shapeWidth {
+		width:150px;
+		height:40px;
+	}
+	
+	#shapeColor {
+		width:150px;
+		height:40px;
+	}
+	
+	input, select{
+    	color: white;
+    	font-size:20px;
+	}
+	
+	#shapeheader {
+		font-size:25px;
+	}
+	
+	label {
+    font-family: "Fira Sans", sans-serif;
+	}
+	
+	input {
+		border-color:white;
+	}
+	
+	#S_button {
+		background-color:white;
+		border-width:1px;
+		border-radius:5%;
+		margin-top:20px;
+	}
+	
+	
+</style>
+
+<div>
+	<h2 id='shapeheader'>Shapes</h2>
+	<p>Add shapes to image</p>
+</div>
+
+<div id = "shapeControls">
+	<label for="shapes"></label>
+	<input list="shapes" id="shapess" placeholder="Choose Shape"/>
+
+	<datalist id="shapes">
+    	<option value="Square">
+    	<option value="Circle">
+    	<option value="Octogon">
+    	<option value="Hexagon">
+    	<option value="Heart">
+    	<option value="Triangle">
+	</datalist>
+
+	
+	<br>
+	<input type="text" id="shapeWidth" placeholder="s i z e . . .">
+	<br>
+	<input type="text" id="shapeColor" placeholder="c o l o r . . .">
+	<br>
+	<input type="checkbox" id="clearShape">
+	<label>Clear Shape</label>
+</div>
